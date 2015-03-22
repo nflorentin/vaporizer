@@ -25,8 +25,8 @@ module Vaporizer
       JSON.parse(response.body)
     end
 
-    def self.reviews(slug, query_params = {})
-      params = { page: 0, take: 10 }.merge(query_params)
+    def self.reviews(slug, params = {})
+      validate_presence_of([:page, :take], params)
       params = { query: params }
       response = strains_reviews_index({ slug: slug}, params)
       handle_parser_error do
@@ -41,8 +41,8 @@ module Vaporizer
       end
     end
 
-    def self.photos(slug, query_params = {})
-      params = { page: 0, take: 10 }.merge(query_params)
+    def self.photos(slug, params = {})
+      params = { page: 0, take: 10 }.merge(params)
       params = { query: params }
       response = strains_photos_index({ slug: slug}, params)
       handle_parser_error do
@@ -50,9 +50,9 @@ module Vaporizer
       end
     end
 
-    def self.availabilities(slug, query_params = {})
-      validate_presence_of([:lat, :lon], query_params)
-      params = { query: query_params }
+    def self.availabilities(slug, params = {})
+      validate_presence_of([:lat, :lon], params)
+      params = { query: params }
       response = strains_availabilities_index({ slug: slug}, params)
       handle_parser_error do
         JSON.parse(response.body)

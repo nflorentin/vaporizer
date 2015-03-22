@@ -79,15 +79,53 @@ describe Vaporizer::Strain do
   end
 
   describe '.reviews(slug, params = {})' do
-    before :all do
-      VCR.use_cassette('reviews') do
-        @reviews = Vaporizer::Strain.reviews('la-confidential')
+    context "valid params" do
+      before :all do
+        @take = 7
+        @page = 0
+        VCR.use_cassette('reviews') do
+          @strains = Vaporizer::Strain.reviews('la-confidential', { page: @page, take: @take })
+        end
+      end
+
+      it 'should return a hash' do
+        VCR.use_cassette('reviews') do
+          expect(@strains.class).to be(Hash)
+        end
+      end
+
+      it "should return a hash with a key named 'reviews'" do
+         VCR.use_cassette('reviews') do
+          expect(@strains).to have_key('reviews')
+        end
+      end
+
+      it "should return the right number of strains" do
+        VCR.use_cassette('reviews') do
+          expect(@strains['reviews'].size).to eq(@take)
+        end
+      end
+
+      it "should give paging context corresponding to sent params" do
+        VCR.use_cassette('reviews') do
+          expect(@strains['pagingContext']['PageIndex']).to eq(@page)
+        end
+      end
+
+      it "should give paging context corresponding to sent params" do
+        VCR.use_cassette('reviews') do
+          expect(@strains['pagingContext']['PageSize']).to eq(@take)
+        end
       end
     end
 
-    it 'should return a hash' do
-      VCR.use_cassette('reviews') do
-        expect(@reviews.class).to be(Hash)
+    context "missing params" do
+      it "should raise exception ArgumentError" do
+        expect { Vaporizer::Strain.reviews('la-confidential', { take: 2 }) }.to raise_error(ArgumentError)
+      end
+
+      it "should raise exception ArgumentError" do
+        expect { Vaporizer::Strain.reviews('la-confidential', { page: 1 }) }.to raise_error(ArgumentError)
       end
     end
   end
