@@ -1,3 +1,5 @@
+require 'httparty'
+
 module Vaporizer
   module Requester
     include HTTParty

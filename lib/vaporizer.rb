@@ -1,4 +1,3 @@
-require 'httparty'
 require 'vaporizer/strain'
 require 'vaporizer/requester'
 require 'vaporizer/version'

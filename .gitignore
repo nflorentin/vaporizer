@@ -20,4 +20,6 @@ tmp
 *.o
 *.a
 mkmf.log
+
 secrets.yml
+spec/fixtures/*.yml
