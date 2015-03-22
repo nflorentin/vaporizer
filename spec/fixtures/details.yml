@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.leafly.com/strains/la-confidential
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      App-Id:
+      - 0a2cc396
+      App-Key:
+      - c4d354cbb934c6c99f9db4692167fdd1
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.7.0.1
+      Date:
+      - Sun, 22 Mar 2015 17:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8162'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - '-1'
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+    body:
+      encoding: UTF-8
+      string: '{"sl_translate":"description,descriptionPlain,category","id":21,"slug":"la-confidential","name":"LA
+        Confidential","symbol":"La","category":"Indica","description":"\u003cp\u003eLA
+        Confidential is known as a very popular and successful strain. Its\u0026nbsp;buds
+        have a frosty, lime green appearance\u0026nbsp;and little purple leaves. The
+        taste is smooth and piney, with a classic skunky aroma that does not linger
+        for too long. Overall,\u0026nbsp;LA Confidential is a well-rounded strain
+        that\u0026nbsp;delivers a fast-approaching sensation that is both psychedelic
+        and super calming on the mind and body. For newer patients seeking relief,\u0026nbsp;LA
+        Confidential can both lull you\u0026nbsp;to sleep and treat acute pain.\u0026nbsp;\u003c/p\u003e\n","descriptionPlain":"LA
+        Confidential is known as a very popular and successful strain. Its\u0026nbsp;buds
+        have a frosty, lime green appearance\u0026nbsp;and little purple leaves. The
+        taste is smooth and piney, with a classic skunky aroma that does not linger
+        for too long. Overall,\u0026nbsp;LA Confidential is a well-rounded strain
+        that\u0026nbsp;delivers a fast-approaching sensation that is both psychedelic
+        and super calming on the mind and body. For newer patients seeking relief,\u0026nbsp;LA
+        Confidential can both lull you\u0026nbsp;to sleep and treat acute pain.\u0026nbsp;\n","aka":null,"rating":4.13,"highlightedReviews":[{"id":2836,"username":"jurassiccat","text":"Even
+        though it\u0027s a pure indica, LA Confidential remains a fantastic all-around
+        strain. Great as an inspiration for devouring food, watching a movie, or laughing
+        conspiratorially with friends.\r\n\r\nI think LA Confidential\u0027s best
+        attribute is its ability to eliminate stress. It will have you feeling like
+        a hungry, happy, melting pad of butter without inducing couchlock. ","starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/4.5/240?color=fcc91d","avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/jurassiccat/avatar/300"},{"id":333636,"username":"SKing187","text":"I
+        just picked up some L.A. Confidential. I have to say Oh my God! I had this
+        strain before but it was the green and red hair pheno.. This pheno I got yesterday
+        is the purple pheno and let me tell you. The smell is of a pungent,skunk,sourgrape,fuel.
+        It tastes as it smells. Not harsh or too pungent tasting.. the high is a bit
+        of a kick in the face after smoking the whole spiff.. I give a 5 out of 5!
+        Cheers","starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/sking187/avatar/300"}],"relatedStrains":[{"id":192,"name":"Skywalker","slug":"skywalker","symbol":"Sky","category":"Indica"},{"id":14,"name":"Cinderella
+        99","slug":"cinderella-99","symbol":"C99","category":"Hybrid"},{"id":915,"name":"Harlequin","slug":"harlequin","symbol":"Har","category":"Sativa"},{"id":79,"name":"Bubble
+        Gum","slug":"bubble-gum","symbol":"Bg","category":"Hybrid"},{"id":163,"name":"White
+        Rhino","slug":"white-rhino","symbol":"Wr","category":"Indica"},{"id":701,"name":"Pre-98
+        Bubba Kush","slug":"pre-98-bubba-kush","symbol":"P98","category":"Indica"},{"id":34,"name":"Purple
+        Urkle","slug":"purple-urkle","symbol":"Pu","category":"Indica"},{"id":382,"name":"Banana
+        Kush","slug":"banana-kush","symbol":"Bak","category":"Hybrid"}],"articles":[{"id":"contentitems-the-leafly-wine-cannabis-flavor-pairing-guide","title":"The
+        Leafly Wine \u0026 Cannabis Flavor Pairing Guide","author":"Kayla Williams","category":"Lifestyle","date":"\/Date(1399564800000)\/","text":"Are
+        you a connoisseur of both wine and cannabis? Use our simple visual guide to
+        determine which cannabis strain to pair with your favorite bottle of wine.
+        Enjoy!","thumbnail":"http://d3odcnigi1nnzz.cloudfront.net/i/6681/w960/h576/max/the-leafly-wine-cannabis-flavor-pairing-guide.jpg","urlslug":"the-leafly-wine-cannabis-flavor-pairing-guide"},{"id":"contentitems-beer-cannabis-pairing-guide","title":"The
+        Leafly Beer \u0026 Cannabis Flavor Pairing Guide","author":"Kayla Williams","category":"Lifestyle","date":"\/Date(1395274980000)\/","text":"This
+        infographic is the ultimate connoisseurs guide for flavor matching cannabis
+        and beer. ","thumbnail":"http://d3odcnigi1nnzz.cloudfront.net/i/6737/w960/h576/max/beer-cannabis-pairing-guide.jpg","urlslug":"beer-cannabis-pairing-guide"}],"reviewCount":287,"flavors":[{"name":"Earthy","score":27.1038326044704},{"name":"Pine","score":20.9684766763848},{"name":"Skunk","score":13.3852648202138},{"name":"Pungent","score":13.2394922254616},{"name":"Woody","score":12.3435981535471}],"effects":[{"name":"Relaxed","score":84.4987548590865},{"name":"Happy","score":63.9964467930029},{"name":"Euphoric","score":53.7657920310982},{"name":"Sleepy","score":47.4239249271137},{"name":"Uplifted","score":43.6839467930029}],"symptoms":[{"name":"Stress","score":51.6513301749271},{"name":"Pain","score":46.4224975704568},{"name":"Insomnia","score":40.8717504859086},{"name":"Depression","score":26.3734511661808},{"name":"Muscle
+        Spasms","score":19.9784378036929}],"conditions":[{"name":"Anxiety","score":32.8185738581147},{"name":"Migraines","score":11.3732993197279},{"name":"Bipolar
+        Disorder","score":10.3020225947522},{"name":"ADD/ADHD","score":9.78118926141885},{"name":"PTSD","score":6.32288629737609}],"negatives":[{"name":"Dry
+        Mouth","score":18.3605138483965},{"name":"Dry Eyes","score":11.4241678814383},{"name":"Paranoid","score":4.18640670553936},{"name":"Dizzy","score":3.25938411078717},{"name":"Anxious","score":2.4477648202138}],"articlesAvailable":true,"articleTotalCount":5,"photos":[{"uploaded":"\/Date(1426827750285)\/","thumb":"http://leafly.blob.core.windows.net/reviews/la-confidential_100x100_fef0.jpg","fullsize":"http://d3odcnigi1nnzz.cloudfront.net/cdn/strain-photo/303724/b/la-confidential__primary_8566.jpg"},{"uploaded":"\/Date(1425893750694)\/","thumb":"http://leafly.blob.core.windows.net/reviews/la-confidential_100x100_3ed9.jpg","fullsize":"http://d3odcnigi1nnzz.cloudfront.net/cdn/strain-photo/297761/b/la-confidential__primary_a528.jpg"},{"uploaded":"\/Date(1425893730966)\/","thumb":"http://leafly.blob.core.windows.net/reviews/la-confidential_100x100_7178.jpg","fullsize":"http://d3odcnigi1nnzz.cloudfront.net/cdn/strain-photo/297728/b/la-confidential__primary_baf6.jpg"},{"uploaded":"\/Date(1424178035019)\/","thumb":"http://leafly.blob.core.windows.net/reviews/la-confidential_100x100_327b.jpg","fullsize":"http://d3odcnigi1nnzz.cloudfront.net/cdn/strain-photo/281194/b/la-confidential__primary_17a2.jpg"},{"uploaded":"\/Date(1424178033771)\/","thumb":"http://leafly.blob.core.windows.net/reviews/la-confidential_100x100_f445.jpg","fullsize":"http://d3odcnigi1nnzz.cloudfront.net/cdn/strain-photo/281099/b/la-confidential__primary_62a4.jpg"},{"uploaded":"\/Date(1423732571096)\/","thumb":"http://leafly.blob.core.windows.net/reviews/la-confidential_100x100_1706.jpg","fullsize":"http://d3odcnigi1nnzz.cloudfront.net/cdn/strain-photo/276427/b/la-confidential__primary_1908.jpg"}],"photoTotalCount":174,"popularCities":["Portland,OR","Los
+        Angeles,CA","Phoenix,AZ","Seattle,WA","Eugene,OR","Denver,CO","Butte,MT","Alamosa,CO","Albany,OR","Ann
+        Arbor,MI"],"permalink":"http://www.leafly.com/indica/la-confidential","starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/4.1/240?color=fcc91d","testGraph":"https://leafly.s3.amazonaws.com/strains/testing/Zc1LA1fZRBt3XH9al9rQ_la-confidential.png","weakDescription":false,"parents":[{"name":"OG
+        LA Affie","slug":"og-la-affie","category":"Indica","permalink":"http://www.leafly.com/indica/og-la-affie","symbol":"Ola","applink":"leafly://strain/og-la-affie"},{"name":"Afghani","slug":"afghani","category":"Indica","permalink":"http://www.leafly.com/indica/afghani","symbol":"Afg","applink":"leafly://strain/afghani"}],"growInfo":{"difficulty":null,"preferredMedium":null,"floweringDays":0,"outdoorFinish":null,"height":null,"averageYield":null,"environment":null,"growNotes":"\n\tRequires
+        a dry outdoor climate\n\tBest results when plants are grown large and not
+        confined to pots\n\tFour phenotypes, three of which typically express sativa
+        influence while the fourth exhibits more indica-like characteristics\n\n"}}'
+    http_version: 
+  recorded_at: Sun, 22 Mar 2015 17:37:59 GMT
+recorded_with: VCR 2.9.3

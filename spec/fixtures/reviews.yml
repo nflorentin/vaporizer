@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.leafly.com/strains/la-confidential/reviews?page=0&take=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      App-Id:
+      - 0a2cc396
+      App-Key:
+      - c4d354cbb934c6c99f9db4692167fdd1
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.7.0.1
+      Date:
+      - Sun, 22 Mar 2015 17:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4350'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - X-Requested-With, Accept, Host, X-Language-Locale, Prefer-Html-Meta-Tags
+      Cache-Control:
+      - public, max-age=86400
+      Expires:
+      - Mon, 23 Mar 2015 17:38:02 GMT
+      Last-Modified:
+      - Sun, 22 Mar 2015 17:38:02 GMT
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+    body:
+      encoding: UTF-8
+      string: '{"reviews":[{"id":333636,"username":"SKing187","text":"I just picked
+        up some L.A. Confidential. I have to say Oh my God! I had this strain before
+        but it was the green and red hair pheno.. This pheno I got yesterday is the
+        purple pheno and let me tell you. The smell is of a pungent,skunk,sourgrape,fuel.
+        It tastes as it smells. Not harsh or too pungent tasting.. the high is a bit
+        of a kick in the face after smoking the whole spiff.. I give a 5 out of 5!
+        Cheers","dateAdded":"\/Date(1426781666427)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/sking187/avatar/300"},{"id":333386,"username":"mrs420snackpack","text":"I
+        liked flavor just not a fan of falling asleep during day lol","dateAdded":"\/Date(1426668810653)\/","rating":4,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/4/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/mrs420snackpack/avatar/300"},{"id":333038,"username":"RonDawg","text":"Kicks
+        my anxiety\u0027s ass! Love it! ","dateAdded":"\/Date(1426616757708)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":"pagosa-organic-therapeutics","locationName":"Pagosa
+        Organic Therapeutics","avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/rondawg/avatar/300"},{"id":332555,"username":"icet34","text":"This
+        bud is fire","dateAdded":"\/Date(1426520470508)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/icet34/avatar/300"},{"id":332214,"username":"ChubbyCheddah","text":"Great
+        sleep aid. This strain has a calming effect that makes everything seem okay.
+        Very good for hyperactive people and people with ADD. This flower is covered
+        in trichomes and has a lovely skunk aroma. This strain is for the lover in
+        you...lay down and relax, while it arouses and heightens your senses. ","dateAdded":"\/Date(1426472523285)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/chubbycheddah/avatar/300"},{"id":332237,"username":"Pic","text":"great
+        high! lots of giggles!","dateAdded":"\/Date(1426451056623)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/pic/avatar/300"},{"id":332203,"username":"Pic","text":"really
+        great high, made me laugh my ","dateAdded":"\/Date(1426446015756)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/pic/avatar/300"},{"id":332016,"username":"emanuel80","text":"Ok","dateAdded":"\/Date(1426394914117)\/","rating":3,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/3/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/emanuel80/avatar/300"},{"id":331979,"username":"Chris17person","text":"I
+        remeber liking this strain, but in no way does it induce sleep.  Other tjan
+        that, it\u0027s thought provoking and keeps me in a steady, mellow buzz.  I
+        will have to try it once more...","dateAdded":"\/Date(1426383349031)\/","rating":0,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/0/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/chris17person/avatar/300"},{"id":331841,"username":"dirtydeedz2015","text":"This
+        strain is top self very powerful high yet calming just got a zip of it tonight
+        wish I had grabbed too love the skunk an piney taste ","dateAdded":"\/Date(1426360649817)\/","rating":5,"starImage":"http://d3odcnigi1nnzz.cloudfront.net/stars/5/240?color=fcc91d","locationSlug":null,"locationName":null,"avatar":"http://d3odcnigi1nnzz.cloudfront.net/profile/dirtydeedz2015/avatar/300"}],"pagingContext":{"PageCount":29,"TotalItemCount":287,"PageIndex":0,"PageNumber":1,"PageSize":10,"HasPreviousPage":false,"HasNextPage":true,"IsFirstPage":true,"IsLastPage":false}}'
+    http_version: 
+  recorded_at: Sun, 22 Mar 2015 17:37:59 GMT
+recorded_with: VCR 2.9.3

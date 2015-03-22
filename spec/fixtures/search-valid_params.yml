@@ -1,0 +1,1242 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://data.leafly.com/strains
+    body:
+      encoding: UTF-8
+      string: '{"search":"","page":0,"take":10}'
+    headers:
+      App-Id:
+      - 0a2cc396
+      App-Key:
+      - c4d354cbb934c6c99f9db4692167fdd1
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.7.0.1
+      Date:
+      - Sun, 22 Mar 2015 17:38:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - X-Requested-With, Accept, Host, X-Language-Locale, Prefer-Html-Meta-Tags
+      Cache-Control:
+      - public, max-age=3600
+      Expires:
+      - Sun, 22 Mar 2015 18:38:00 GMT
+      Last-Modified:
+      - Sun, 22 Mar 2015 17:38:00 GMT
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"sl_translate\": \"DisplayCategory,DisplayLabel\",\r\n  \"Strains\":
+        [\r\n    {\r\n      \"Id\": 75,\r\n      \"UrlName\": \"blue-dream\",\r\n
+        \     \"Name\": \"Blue Dream\",\r\n      \"Category\": \"Hybrid\",\r\n      \"DisplayCategory\":
+        \"Hybrid\",\r\n      \"Symbol\": \"Bd\",\r\n      \"RatingCount\": 5234,\r\n
+        \     \"ReviewCount\": 3083,\r\n      \"Rating\": 8.39,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.2/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-happy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Happy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Happy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-relaxed\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Relaxed\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Relaxed\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-euphoric\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Euphoric\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Euphoric\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-uplifted\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Uplifted\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Uplifted\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-creative\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Creative\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Creative\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-headache\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Headache\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Headache\"\r\n        }\r\n      ],\r\n      \"Flavors\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Sweet\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-blueberry\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Blueberry\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Blueberry\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-berry\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Berry\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Berry\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-earthy\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pungent\"\r\n        }\r\n      ],\r\n
+        \     \"Symptoms\": [\r\n        {\r\n          \"Id\": \"LogTags-stress\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Stress\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Stress\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-depression\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Depression\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Depression\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pain\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Pain\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pain\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-insomnia\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Insomnia\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Insomnia\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-headaches\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Headaches\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Headaches\"\r\n        }\r\n      ],\r\n
+        \     \"Conditions\": [\r\n        {\r\n          \"Id\": \"LogTags-anxiety\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Anxiety\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxiety\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-bipolar-disorder\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Bipolar Disorder\"\r\n
+        \       }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/hybrid/blue-dream\",\r\n
+        \     \"SortName\": \"Blue Dream\",\r\n      \"LogTags\": [\r\n        \"happy\",\r\n
+        \       \"relaxed\",\r\n        \"euphoric\",\r\n        \"uplifted\",\r\n
+        \       \"creative\",\r\n        \"dry-mouth\",\r\n        \"dry-eyes\",\r\n
+        \       \"paranoid\",\r\n        \"dizzy\",\r\n        \"headache\",\r\n        \"sweet\",\r\n
+        \       \"blueberry\",\r\n        \"berry\",\r\n        \"earthy\",\r\n        \"pungent\",\r\n
+        \       \"stress\",\r\n        \"depression\",\r\n        \"pain\",\r\n        \"insomnia\",\r\n
+        \       \"headaches\",\r\n        \"anxiety\",\r\n        \"addadhd\",\r\n
+        \       \"migraines\",\r\n        \"ptsd\",\r\n        \"bipolar-disorder\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 13,\r\n      \"UrlName\": \"sour-diesel\",\r\n
+        \     \"Name\": \"Sour Diesel\",\r\n      \"Category\": \"Sativa\",\r\n      \"DisplayCategory\":
+        \"Sativa\",\r\n      \"Symbol\": \"Sd\",\r\n      \"RatingCount\": 3105,\r\n
+        \     \"ReviewCount\": 1787,\r\n      \"Rating\": 8.41,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.2/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-happy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Happy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Happy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-uplifted\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Uplifted\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Uplifted\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-euphoric\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Euphoric\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Euphoric\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-energetic\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Energetic\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Energetic\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-creative\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Creative\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Creative\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-anxious\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Anxious\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Anxious\"\r\n        }\r\n      ],\r\n      \"Flavors\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-diesel\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Diesel\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Diesel\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pungent\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-skunk\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Skunk\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Skunk\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-earthy\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        }\r\n      ],\r\n
+        \     \"Symptoms\": [\r\n        {\r\n          \"Id\": \"LogTags-stress\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Stress\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Stress\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-depression\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Depression\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Depression\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pain\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Pain\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pain\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-lack-of-appetite\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Lack of Appetite\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Lack of Appetite\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-headaches\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Headaches\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Headaches\"\r\n        }\r\n      ],\r\n      \"Conditions\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-anxiety\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"Anxiety\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Anxiety\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-addadhd\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"ADD/ADHD\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"ADD/ADHD\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-migraines\",\r\n          \"Category\": 2,\r\n
+        \         \"Name\": \"Migraines\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Migraines\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-bipolar-disorder\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Bipolar Disorder\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-ptsd\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"PTSD\"\r\n        }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/sativa/sour-diesel\",\r\n
+        \     \"SortName\": \"Sour Diesel\",\r\n      \"LogTags\": [\r\n        \"happy\",\r\n
+        \       \"uplifted\",\r\n        \"euphoric\",\r\n        \"energetic\",\r\n
+        \       \"creative\",\r\n        \"dry-mouth\",\r\n        \"dry-eyes\",\r\n
+        \       \"paranoid\",\r\n        \"dizzy\",\r\n        \"anxious\",\r\n        \"diesel\",\r\n
+        \       \"pungent\",\r\n        \"skunk\",\r\n        \"earthy\",\r\n        \"sweet\",\r\n
+        \       \"stress\",\r\n        \"depression\",\r\n        \"pain\",\r\n        \"lack-of-appetite\",\r\n
+        \       \"headaches\",\r\n        \"anxiety\",\r\n        \"addadhd\",\r\n
+        \       \"migraines\",\r\n        \"bipolar-disorder\",\r\n        \"ptsd\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 23,\r\n      \"UrlName\": \"og-kush\",\r\n
+        \     \"Name\": \"OG Kush\",\r\n      \"Category\": \"Hybrid\",\r\n      \"DisplayCategory\":
+        \"Hybrid\",\r\n      \"Symbol\": \"Ogk\",\r\n      \"RatingCount\": 2230,\r\n
+        \     \"ReviewCount\": 1336,\r\n      \"Rating\": 8.39,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.2/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-relaxed\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Relaxed\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Relaxed\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-happy\",\r\n          \"Category\": 0,\r\n          \"Name\": \"Happy\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Happy\"\r\n        },\r\n
+        \       {\r\n          \"Id\": \"LogTags-euphoric\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Euphoric\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Euphoric\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-uplifted\",\r\n          \"Category\": 0,\r\n          \"Name\":
+        \"Uplifted\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Uplifted\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-hungry\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Hungry\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Hungry\"\r\n        }\r\n      ],\r\n
+        \     \"NegativeEffects\": [\r\n        {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-headache\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Headache\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Headache\"\r\n        }\r\n      ],\r\n      \"Flavors\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-earthy\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-woody\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Woody\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Woody\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pine\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Pine\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pine\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Pungent\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-sweet\",\r\n          \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        }\r\n
+        \     ],\r\n      \"Symptoms\": [\r\n        {\r\n          \"Id\": \"LogTags-stress\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Stress\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Stress\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pain\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Pain\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pain\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-depression\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Depression\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Depression\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-insomnia\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Insomnia\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Insomnia\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-headaches\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Headaches\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Headaches\"\r\n        }\r\n      ],\r\n
+        \     \"Conditions\": [\r\n        {\r\n          \"Id\": \"LogTags-anxiety\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Anxiety\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxiety\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-bipolar-disorder\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Bipolar Disorder\"\r\n
+        \       }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/hybrid/og-kush\",\r\n
+        \     \"SortName\": \"OG Kush\",\r\n      \"LogTags\": [\r\n        \"relaxed\",\r\n
+        \       \"happy\",\r\n        \"euphoric\",\r\n        \"uplifted\",\r\n        \"hungry\",\r\n
+        \       \"dry-mouth\",\r\n        \"dry-eyes\",\r\n        \"paranoid\",\r\n
+        \       \"dizzy\",\r\n        \"headache\",\r\n        \"earthy\",\r\n        \"woody\",\r\n
+        \       \"pine\",\r\n        \"pungent\",\r\n        \"sweet\",\r\n        \"stress\",\r\n
+        \       \"pain\",\r\n        \"depression\",\r\n        \"insomnia\",\r\n
+        \       \"headaches\",\r\n        \"anxiety\",\r\n        \"addadhd\",\r\n
+        \       \"migraines\",\r\n        \"ptsd\",\r\n        \"bipolar-disorder\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 32,\r\n      \"UrlName\": \"green-crack\",\r\n
+        \     \"Name\": \"Green Crack\",\r\n      \"Category\": \"Sativa\",\r\n      \"DisplayCategory\":
+        \"Sativa\",\r\n      \"Symbol\": \"Gc\",\r\n      \"RatingCount\": 2127,\r\n
+        \     \"ReviewCount\": 1321,\r\n      \"Rating\": 8.15,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.1/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-energetic\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Energetic\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Energetic\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-happy\",\r\n          \"Category\": 0,\r\n          \"Name\": \"Happy\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Happy\"\r\n        },\r\n
+        \       {\r\n          \"Id\": \"LogTags-uplifted\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Uplifted\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Uplifted\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-euphoric\",\r\n          \"Category\": 0,\r\n          \"Name\":
+        \"Euphoric\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Euphoric\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-creative\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Creative\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Creative\"\r\n        }\r\n      ],\r\n
+        \     \"NegativeEffects\": [\r\n        {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-anxious\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Anxious\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Anxious\"\r\n        }\r\n      ],\r\n      \"Flavors\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Sweet\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-citrus\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Citrus\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Citrus\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-earthy\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pungent\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-tropical\",\r\n          \"Category\": 3,\r\n
+        \         \"Name\": \"Tropical\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Tropical\"\r\n        }\r\n      ],\r\n      \"Symptoms\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-stress\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Stress\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Stress\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-depression\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Depression\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Depression\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pain\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Pain\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pain\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-fatigue\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Fatigue\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Fatigue\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-headaches\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Headaches\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Headaches\"\r\n        }\r\n      ],\r\n      \"Conditions\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-anxiety\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"Anxiety\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Anxiety\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-addadhd\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"ADD/ADHD\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"ADD/ADHD\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-migraines\",\r\n          \"Category\": 2,\r\n
+        \         \"Name\": \"Migraines\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Migraines\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-bipolar-disorder\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Bipolar Disorder\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-ptsd\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"PTSD\"\r\n        }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/sativa/green-crack\",\r\n
+        \     \"SortName\": \"Green Crack\",\r\n      \"LogTags\": [\r\n        \"energetic\",\r\n
+        \       \"happy\",\r\n        \"uplifted\",\r\n        \"euphoric\",\r\n        \"creative\",\r\n
+        \       \"dry-mouth\",\r\n        \"dry-eyes\",\r\n        \"paranoid\",\r\n
+        \       \"dizzy\",\r\n        \"anxious\",\r\n        \"sweet\",\r\n        \"citrus\",\r\n
+        \       \"earthy\",\r\n        \"pungent\",\r\n        \"tropical\",\r\n        \"stress\",\r\n
+        \       \"depression\",\r\n        \"pain\",\r\n        \"fatigue\",\r\n        \"headaches\",\r\n
+        \       \"anxiety\",\r\n        \"addadhd\",\r\n        \"migraines\",\r\n
+        \       \"bipolar-disorder\",\r\n        \"ptsd\"\r\n      ]\r\n    },\r\n
+        \   {\r\n      \"Id\": 10771,\r\n      \"UrlName\": \"girl-scout-cookie\",\r\n
+        \     \"Name\": \"Girl Scout Cookies\",\r\n      \"Category\": \"Hybrid\",\r\n
+        \     \"DisplayCategory\": \"Hybrid\",\r\n      \"Symbol\": \"Gsc\",\r\n      \"RatingCount\":
+        1845,\r\n      \"ReviewCount\": 1231,\r\n      \"Rating\": 8.67,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.3/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-happy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Happy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Happy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-euphoric\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Euphoric\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Euphoric\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-relaxed\",\r\n          \"Category\": 0,\r\n          \"Name\":
+        \"Relaxed\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Relaxed\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-uplifted\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Uplifted\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Uplifted\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-creative\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Creative\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Creative\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-dizzy\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dizzy\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-paranoid\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Paranoid\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Paranoid\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-headache\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Headache\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Headache\"\r\n        }\r\n      ],\r\n
+        \     \"Flavors\": [\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-earthy\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pungent\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-woody\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Woody\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Woody\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-pine\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Pine\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Pine\"\r\n        }\r\n      ],\r\n      \"Symptoms\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-stress\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Stress\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Stress\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pain\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Pain\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pain\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-depression\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Depression\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Depression\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-insomnia\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Insomnia\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Insomnia\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-lack-of-appetite\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Lack of Appetite\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Lack of Appetite\"\r\n        }\r\n      ],\r\n
+        \     \"Conditions\": [\r\n        {\r\n          \"Id\": \"LogTags-anxiety\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Anxiety\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxiety\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-bipolar-disorder\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Bipolar Disorder\"\r\n
+        \       }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/hybrid/girl-scout-cookie\",\r\n
+        \     \"SortName\": \"Girl Scout Cookies\",\r\n      \"LogTags\": [\r\n        \"happy\",\r\n
+        \       \"euphoric\",\r\n        \"relaxed\",\r\n        \"uplifted\",\r\n
+        \       \"creative\",\r\n        \"dry-mouth\",\r\n        \"dry-eyes\",\r\n
+        \       \"dizzy\",\r\n        \"paranoid\",\r\n        \"headache\",\r\n        \"sweet\",\r\n
+        \       \"earthy\",\r\n        \"pungent\",\r\n        \"woody\",\r\n        \"pine\",\r\n
+        \       \"stress\",\r\n        \"pain\",\r\n        \"depression\",\r\n        \"insomnia\",\r\n
+        \       \"lack-of-appetite\",\r\n        \"anxiety\",\r\n        \"addadhd\",\r\n
+        \       \"migraines\",\r\n        \"ptsd\",\r\n        \"bipolar-disorder\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 11,\r\n      \"UrlName\": \"granddaddy-purple\",\r\n
+        \     \"Name\": \"Granddaddy Purple\",\r\n      \"Category\": \"Indica\",\r\n
+        \     \"DisplayCategory\": \"Indica\",\r\n      \"Symbol\": \"Gdp\",\r\n      \"RatingCount\":
+        1713,\r\n      \"ReviewCount\": 988,\r\n      \"Rating\": 8.43,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.2/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-relaxed\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Relaxed\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Relaxed\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-happy\",\r\n          \"Category\": 0,\r\n          \"Name\": \"Happy\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Happy\"\r\n        },\r\n
+        \       {\r\n          \"Id\": \"LogTags-sleepy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Sleepy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Sleepy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-euphoric\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Euphoric\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Euphoric\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-hungry\",\r\n          \"Category\": 0,\r\n          \"Name\":
+        \"Hungry\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Hungry\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-dry-eyes\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dry Eyes\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dry Eyes\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-headache\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Headache\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Headache\"\r\n        }\r\n      ],\r\n      \"Flavors\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-sweet\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Sweet\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-grape\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Grape\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Grape\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-berry\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Berry\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Berry\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-earthy\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pungent\"\r\n        }\r\n      ],\r\n
+        \     \"Symptoms\": [\r\n        {\r\n          \"Id\": \"LogTags-stress\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Stress\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Stress\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pain\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Pain\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pain\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-insomnia\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Insomnia\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Insomnia\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-depression\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Depression\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Depression\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-lack-of-appetite\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Lack of Appetite\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Lack of Appetite\"\r\n
+        \       }\r\n      ],\r\n      \"Conditions\": [\r\n        {\r\n          \"Id\":
+        \"LogTags-anxiety\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"Anxiety\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Anxiety\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-ptsd\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"PTSD\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-bipolar-disorder\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Bipolar Disorder\"\r\n        }\r\n      ],\r\n
+        \     \"permalink\": \"http://www.leafly.com/indica/granddaddy-purple\",\r\n
+        \     \"SortName\": \"Granddaddy Purple\",\r\n      \"LogTags\": [\r\n        \"relaxed\",\r\n
+        \       \"happy\",\r\n        \"sleepy\",\r\n        \"euphoric\",\r\n        \"hungry\",\r\n
+        \       \"dry-mouth\",\r\n        \"dry-eyes\",\r\n        \"dizzy\",\r\n
+        \       \"paranoid\",\r\n        \"headache\",\r\n        \"sweet\",\r\n        \"grape\",\r\n
+        \       \"berry\",\r\n        \"earthy\",\r\n        \"pungent\",\r\n        \"stress\",\r\n
+        \       \"pain\",\r\n        \"insomnia\",\r\n        \"depression\",\r\n
+        \       \"lack-of-appetite\",\r\n        \"anxiety\",\r\n        \"migraines\",\r\n
+        \       \"addadhd\",\r\n        \"ptsd\",\r\n        \"bipolar-disorder\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 26,\r\n      \"UrlName\": \"white-widow\",\r\n
+        \     \"Name\": \"White Widow\",\r\n      \"Category\": \"Hybrid\",\r\n      \"DisplayCategory\":
+        \"Hybrid\",\r\n      \"Symbol\": \"Ww\",\r\n      \"RatingCount\": 1690,\r\n
+        \     \"ReviewCount\": 980,\r\n      \"Rating\": 8.42,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.2/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-happy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Happy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Happy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-euphoric\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Euphoric\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Euphoric\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-relaxed\",\r\n          \"Category\": 0,\r\n          \"Name\":
+        \"Relaxed\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Relaxed\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-uplifted\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Uplifted\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Uplifted\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-creative\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Creative\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Creative\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-headache\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Headache\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Headache\"\r\n        }\r\n      ],\r\n      \"Flavors\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-earthy\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-woody\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Woody\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Woody\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pungent\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Pungent\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Pungent\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pine\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Pine\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pine\"\r\n
+        \       }\r\n      ],\r\n      \"Symptoms\": [\r\n        {\r\n          \"Id\":
+        \"LogTags-stress\",\r\n          \"Category\": 1,\r\n          \"Name\": \"Stress\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Stress\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-pain\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Pain\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Pain\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-depression\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Depression\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Depression\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-insomnia\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Insomnia\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Insomnia\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-headaches\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Headaches\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Headaches\"\r\n        }\r\n      ],\r\n
+        \     \"Conditions\": [\r\n        {\r\n          \"Id\": \"LogTags-anxiety\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Anxiety\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxiety\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-bipolar-disorder\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Bipolar Disorder\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Bipolar Disorder\"\r\n
+        \       }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/hybrid/white-widow\",\r\n
+        \     \"SortName\": \"White Widow\",\r\n      \"LogTags\": [\r\n        \"happy\",\r\n
+        \       \"euphoric\",\r\n        \"relaxed\",\r\n        \"uplifted\",\r\n
+        \       \"creative\",\r\n        \"dry-mouth\",\r\n        \"dry-eyes\",\r\n
+        \       \"paranoid\",\r\n        \"dizzy\",\r\n        \"headache\",\r\n        \"earthy\",\r\n
+        \       \"woody\",\r\n        \"pungent\",\r\n        \"sweet\",\r\n        \"pine\",\r\n
+        \       \"stress\",\r\n        \"pain\",\r\n        \"depression\",\r\n        \"insomnia\",\r\n
+        \       \"headaches\",\r\n        \"anxiety\",\r\n        \"addadhd\",\r\n
+        \       \"migraines\",\r\n        \"ptsd\",\r\n        \"bipolar-disorder\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 31,\r\n      \"UrlName\": \"jack-herer\",\r\n
+        \     \"Name\": \"Jack Herer\",\r\n      \"Category\": \"Sativa\",\r\n      \"DisplayCategory\":
+        \"Sativa\",\r\n      \"Symbol\": \"Jh\",\r\n      \"RatingCount\": 1540,\r\n
+        \     \"ReviewCount\": 864,\r\n      \"Rating\": 8.46,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.2/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-happy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Happy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Happy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-uplifted\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Uplifted\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Uplifted\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-euphoric\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Euphoric\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Euphoric\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-energetic\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Energetic\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Energetic\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-creative\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Creative\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Creative\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-dizzy\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dizzy\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-paranoid\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Paranoid\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Paranoid\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-anxious\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Anxious\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxious\"\r\n        }\r\n      ],\r\n
+        \     \"Flavors\": [\r\n        {\r\n          \"Id\": \"LogTags-earthy\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Earthy\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Earthy\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pine\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Pine\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pine\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-woody\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Woody\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Woody\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-citrus\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Citrus\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Citrus\"\r\n        }\r\n      ],\r\n      \"Symptoms\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-stress\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Stress\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Stress\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-depression\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Depression\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Depression\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pain\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Pain\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pain\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-fatigue\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Fatigue\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Fatigue\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-lack-of-appetite\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Lack of Appetite\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Lack of Appetite\"\r\n        }\r\n      ],\r\n      \"Conditions\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-anxiety\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"Anxiety\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Anxiety\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-arthritis\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"Arthritis\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Arthritis\"\r\n        }\r\n      ],\r\n      \"permalink\":
+        \"http://www.leafly.com/sativa/jack-herer\",\r\n      \"SortName\": \"Jack
+        Herer\",\r\n      \"LogTags\": [\r\n        \"happy\",\r\n        \"uplifted\",\r\n
+        \       \"euphoric\",\r\n        \"energetic\",\r\n        \"creative\",\r\n
+        \       \"dry-mouth\",\r\n        \"dry-eyes\",\r\n        \"dizzy\",\r\n
+        \       \"paranoid\",\r\n        \"anxious\",\r\n        \"earthy\",\r\n        \"pine\",\r\n
+        \       \"woody\",\r\n        \"sweet\",\r\n        \"citrus\",\r\n        \"stress\",\r\n
+        \       \"depression\",\r\n        \"pain\",\r\n        \"fatigue\",\r\n        \"lack-of-appetite\",\r\n
+        \       \"anxiety\",\r\n        \"addadhd\",\r\n        \"migraines\",\r\n
+        \       \"ptsd\",\r\n        \"arthritis\"\r\n      ]\r\n    },\r\n    {\r\n
+        \     \"Id\": 33,\r\n      \"UrlName\": \"bubba-kush\",\r\n      \"Name\":
+        \"Bubba Kush\",\r\n      \"Category\": \"Indica\",\r\n      \"DisplayCategory\":
+        \"Indica\",\r\n      \"Symbol\": \"Bk\",\r\n      \"RatingCount\": 1377,\r\n
+        \     \"ReviewCount\": 856,\r\n      \"Rating\": 8.2,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4.1/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-relaxed\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Relaxed\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Relaxed\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-sleepy\",\r\n          \"Category\": 0,\r\n          \"Name\": \"Sleepy\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Sleepy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-euphoric\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Euphoric\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Euphoric\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-happy\",\r\n          \"Category\": 0,\r\n          \"Name\": \"Happy\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Happy\"\r\n        },\r\n
+        \       {\r\n          \"Id\": \"LogTags-hungry\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Hungry\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Hungry\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-dry-eyes\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dry Eyes\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dry Eyes\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-dizzy\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dizzy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-paranoid\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Paranoid\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Paranoid\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-headache\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Headache\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Headache\"\r\n        }\r\n      ],\r\n      \"Flavors\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-earthy\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Earthy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Earthy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-sweet\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-pine\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Pine\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Pine\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Pungent\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-woody\",\r\n          \"Category\": 3,\r\n          \"Name\": \"Woody\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Woody\"\r\n        }\r\n
+        \     ],\r\n      \"Symptoms\": [\r\n        {\r\n          \"Id\": \"LogTags-stress\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Stress\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Stress\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-insomnia\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Insomnia\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Insomnia\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pain\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Pain\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pain\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-depression\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Depression\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Depression\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-lack-of-appetite\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Lack of Appetite\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Lack of Appetite\"\r\n
+        \       }\r\n      ],\r\n      \"Conditions\": [\r\n        {\r\n          \"Id\":
+        \"LogTags-anxiety\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"Anxiety\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Anxiety\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-addadhd\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"ADD/ADHD\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"ADD/ADHD\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-bipolar-disorder\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"Bipolar Disorder\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Bipolar Disorder\"\r\n        }\r\n      ],\r\n      \"permalink\": \"http://www.leafly.com/indica/bubba-kush\",\r\n
+        \     \"SortName\": \"Bubba Kush\",\r\n      \"LogTags\": [\r\n        \"relaxed\",\r\n
+        \       \"sleepy\",\r\n        \"euphoric\",\r\n        \"happy\",\r\n        \"hungry\",\r\n
+        \       \"dry-mouth\",\r\n        \"dry-eyes\",\r\n        \"dizzy\",\r\n
+        \       \"paranoid\",\r\n        \"headache\",\r\n        \"earthy\",\r\n
+        \       \"sweet\",\r\n        \"pine\",\r\n        \"pungent\",\r\n        \"woody\",\r\n
+        \       \"stress\",\r\n        \"insomnia\",\r\n        \"pain\",\r\n        \"depression\",\r\n
+        \       \"lack-of-appetite\",\r\n        \"anxiety\",\r\n        \"addadhd\",\r\n
+        \       \"ptsd\",\r\n        \"migraines\",\r\n        \"bipolar-disorder\"\r\n
+        \     ]\r\n    },\r\n    {\r\n      \"Id\": 1,\r\n      \"UrlName\": \"ak-47\",\r\n
+        \     \"Name\": \"AK-47\",\r\n      \"Category\": \"Hybrid\",\r\n      \"DisplayCategory\":
+        \"Hybrid\",\r\n      \"Symbol\": \"Ak\",\r\n      \"RatingCount\": 1301,\r\n
+        \     \"ReviewCount\": 729,\r\n      \"Rating\": 7.98,\r\n      \"StarImage\":
+        \"http://d3odcnigi1nnzz.cloudfront.net/stars/4/240?color=fcc91d\",\r\n      \"Tags\":
+        [\r\n        {\r\n          \"Id\": \"LogTags-happy\",\r\n          \"Category\":
+        0,\r\n          \"Name\": \"Happy\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Happy\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-relaxed\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Relaxed\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Relaxed\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-uplifted\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Uplifted\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Uplifted\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-euphoric\",\r\n
+        \         \"Category\": 0,\r\n          \"Name\": \"Euphoric\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Euphoric\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-creative\",\r\n          \"Category\": 0,\r\n
+        \         \"Name\": \"Creative\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Creative\"\r\n        }\r\n      ],\r\n      \"NegativeEffects\": [\r\n
+        \       {\r\n          \"Id\": \"LogTags-dry-mouth\",\r\n          \"Category\":
+        4,\r\n          \"Name\": \"Dry Mouth\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Dry Mouth\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-dry-eyes\",\r\n          \"Category\": 4,\r\n          \"Name\":
+        \"Dry Eyes\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Dry Eyes\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-dizzy\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Dizzy\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Dizzy\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-paranoid\",\r\n          \"Category\": 4,\r\n
+        \         \"Name\": \"Paranoid\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Paranoid\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-anxious\",\r\n
+        \         \"Category\": 4,\r\n          \"Name\": \"Anxious\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxious\"\r\n        }\r\n      ],\r\n
+        \     \"Flavors\": [\r\n        {\r\n          \"Id\": \"LogTags-earthy\",\r\n
+        \         \"Category\": 3,\r\n          \"Name\": \"Earthy\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Earthy\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-skunk\",\r\n          \"Category\": 3,\r\n          \"Name\":
+        \"Skunk\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"Skunk\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-pungent\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Pungent\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Pungent\"\r\n        },\r\n        {\r\n          \"Id\":
+        \"LogTags-sweet\",\r\n          \"Category\": 3,\r\n          \"Name\": \"Sweet\",\r\n
+        \         \"Active\": true,\r\n          \"DisplayLabel\": \"Sweet\"\r\n        },\r\n
+        \       {\r\n          \"Id\": \"LogTags-woody\",\r\n          \"Category\":
+        3,\r\n          \"Name\": \"Woody\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Woody\"\r\n        }\r\n      ],\r\n      \"Symptoms\": [\r\n        {\r\n
+        \         \"Id\": \"LogTags-stress\",\r\n          \"Category\": 1,\r\n          \"Name\":
+        \"Stress\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Stress\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-pain\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Pain\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Pain\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-depression\",\r\n          \"Category\": 1,\r\n
+        \         \"Name\": \"Depression\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"Depression\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-insomnia\",\r\n
+        \         \"Category\": 1,\r\n          \"Name\": \"Insomnia\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Insomnia\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-lack-of-appetite\",\r\n          \"Category\":
+        1,\r\n          \"Name\": \"Lack of Appetite\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Lack of Appetite\"\r\n        }\r\n      ],\r\n
+        \     \"Conditions\": [\r\n        {\r\n          \"Id\": \"LogTags-anxiety\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Anxiety\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Anxiety\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-addadhd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"ADD/ADHD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\":
+        \"ADD/ADHD\"\r\n        },\r\n        {\r\n          \"Id\": \"LogTags-migraines\",\r\n
+        \         \"Category\": 2,\r\n          \"Name\": \"Migraines\",\r\n          \"Active\":
+        true,\r\n          \"DisplayLabel\": \"Migraines\"\r\n        },\r\n        {\r\n
+        \         \"Id\": \"LogTags-ptsd\",\r\n          \"Category\": 2,\r\n          \"Name\":
+        \"PTSD\",\r\n          \"Active\": true,\r\n          \"DisplayLabel\": \"PTSD\"\r\n
+        \       },\r\n        {\r\n          \"Id\": \"LogTags-arthritis\",\r\n          \"Category\":
+        2,\r\n          \"Name\": \"Arthritis\",\r\n          \"Active\": true,\r\n
+        \         \"DisplayLabel\": \"Arthritis\"\r\n        }\r\n      ],\r\n      \"permalink\":
+        \"http://www.leafly.com/hybrid/ak-47\",\r\n      \"SortName\": \"AK-47\",\r\n
+        \     \"LogTags\": [\r\n        \"happy\",\r\n        \"relaxed\",\r\n        \"uplifted\",\r\n
+        \       \"euphoric\",\r\n        \"creative\",\r\n        \"dry-mouth\",\r\n
+        \       \"dry-eyes\",\r\n        \"dizzy\",\r\n        \"paranoid\",\r\n        \"anxious\",\r\n
+        \       \"earthy\",\r\n        \"skunk\",\r\n        \"pungent\",\r\n        \"sweet\",\r\n
+        \       \"woody\",\r\n        \"stress\",\r\n        \"pain\",\r\n        \"depression\",\r\n
+        \       \"insomnia\",\r\n        \"lack-of-appetite\",\r\n        \"anxiety\",\r\n
+        \       \"addadhd\",\r\n        \"migraines\",\r\n        \"ptsd\",\r\n        \"arthritis\"\r\n
+        \     ]\r\n    }\r\n  ],\r\n  \"Facets\": [\r\n    {\r\n      \"Label\": \"Aroused\",\r\n
+        \     \"DisplayLabel\": \"Aroused\",\r\n      \"Hits\": 94,\r\n      \"TagId\":
+        \"aroused\",\r\n      \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n
+        \     \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\": \"Aroused\",\r\n
+        \     \"DisplayLabel\": \"Aroused\",\r\n      \"Hits\": 94,\r\n      \"TagId\":
+        \"aroused\",\r\n      \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n
+        \     \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\": \"Creative\",\r\n
+        \     \"DisplayLabel\": \"Creative\",\r\n      \"Hits\": 507,\r\n      \"TagId\":
+        \"creative\",\r\n      \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n
+        \     \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\": \"Creative\",\r\n
+        \     \"DisplayLabel\": \"Creative\",\r\n      \"Hits\": 507,\r\n      \"TagId\":
+        \"creative\",\r\n      \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n
+        \     \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\": \"Energetic\",\r\n
+        \     \"DisplayLabel\": \"Energetic\",\r\n      \"Hits\": 355,\r\n      \"TagId\":
+        \"energetic\",\r\n      \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n
+        \     \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\": \"Energetic\",\r\n
+        \     \"DisplayLabel\": \"Energetic\",\r\n      \"Hits\": 355,\r\n      \"TagId\":
+        \"energetic\",\r\n      \"Category\": \"Exclude\",\r\n      \"Selected\":
+        false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"Euphoric\",\r\n      \"DisplayLabel\": \"Euphoric\",\r\n      \"Hits\":
+        896,\r\n      \"TagId\": \"euphoric\",\r\n      \"Category\": \"Tags\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Euphoric\",\r\n      \"DisplayLabel\": \"Euphoric\",\r\n
+        \     \"Hits\": 896,\r\n      \"TagId\": \"euphoric\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Focused\",\r\n      \"DisplayLabel\":
+        \"Focused\",\r\n      \"Hits\": 225,\r\n      \"TagId\": \"focused\",\r\n
+        \     \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Focused\",\r\n      \"DisplayLabel\":
+        \"Focused\",\r\n      \"Hits\": 225,\r\n      \"TagId\": \"focused\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Giggly\",\r\n      \"DisplayLabel\":
+        \"Giggly\",\r\n      \"Hits\": 151,\r\n      \"TagId\": \"giggly\",\r\n      \"Category\":
+        \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n
+        \   {\r\n      \"Label\": \"Giggly\",\r\n      \"DisplayLabel\": \"Giggly\",\r\n
+        \     \"Hits\": 151,\r\n      \"TagId\": \"giggly\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Happy\",\r\n      \"DisplayLabel\":
+        \"Happy\",\r\n      \"Hits\": 964,\r\n      \"TagId\": \"happy\",\r\n      \"Category\":
+        \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n
+        \   {\r\n      \"Label\": \"Happy\",\r\n      \"DisplayLabel\": \"Happy\",\r\n
+        \     \"Hits\": 964,\r\n      \"TagId\": \"happy\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Hungry\",\r\n      \"DisplayLabel\":
+        \"Hungry\",\r\n      \"Hits\": 300,\r\n      \"TagId\": \"hungry\",\r\n      \"Category\":
+        \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n
+        \   {\r\n      \"Label\": \"Hungry\",\r\n      \"DisplayLabel\": \"Hungry\",\r\n
+        \     \"Hits\": 300,\r\n      \"TagId\": \"hungry\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Relaxed\",\r\n      \"DisplayLabel\":
+        \"Relaxed\",\r\n      \"Hits\": 904,\r\n      \"TagId\": \"relaxed\",\r\n
+        \     \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Relaxed\",\r\n      \"DisplayLabel\":
+        \"Relaxed\",\r\n      \"Hits\": 904,\r\n      \"TagId\": \"relaxed\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Sleepy\",\r\n      \"DisplayLabel\":
+        \"Sleepy\",\r\n      \"Hits\": 320,\r\n      \"TagId\": \"sleepy\",\r\n      \"Category\":
+        \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n
+        \   {\r\n      \"Label\": \"Sleepy\",\r\n      \"DisplayLabel\": \"Sleepy\",\r\n
+        \     \"Hits\": 320,\r\n      \"TagId\": \"sleepy\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Talkative\",\r\n      \"DisplayLabel\":
+        \"Talkative\",\r\n      \"Hits\": 106,\r\n      \"TagId\": \"talkative\",\r\n
+        \     \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Talkative\",\r\n      \"DisplayLabel\":
+        \"Talkative\",\r\n      \"Hits\": 106,\r\n      \"TagId\": \"talkative\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Tingly\",\r\n      \"DisplayLabel\":
+        \"Tingly\",\r\n      \"Hits\": 97,\r\n      \"TagId\": \"tingly\",\r\n      \"Category\":
+        \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n
+        \   {\r\n      \"Label\": \"Tingly\",\r\n      \"DisplayLabel\": \"Tingly\",\r\n
+        \     \"Hits\": 97,\r\n      \"TagId\": \"tingly\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Uplifted\",\r\n      \"DisplayLabel\":
+        \"Uplifted\",\r\n      \"Hits\": 689,\r\n      \"TagId\": \"uplifted\",\r\n
+        \     \"Category\": \"Tags\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Uplifted\",\r\n      \"DisplayLabel\":
+        \"Uplifted\",\r\n      \"Hits\": 689,\r\n      \"TagId\": \"uplifted\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Dizzy\",\r\n      \"DisplayLabel\":
+        \"Dizzy\",\r\n      \"Hits\": 614,\r\n      \"TagId\": \"dizzy\",\r\n      \"Category\":
+        \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Dry Eyes\",\r\n      \"DisplayLabel\":
+        \"Dry Eyes\",\r\n      \"Hits\": 809,\r\n      \"TagId\": \"dry-eyes\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Dry Mouth\",\r\n      \"DisplayLabel\":
+        \"Dry Mouth\",\r\n      \"Hits\": 901,\r\n      \"TagId\": \"dry-mouth\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Headache\",\r\n      \"DisplayLabel\":
+        \"Headache\",\r\n      \"Hits\": 457,\r\n      \"TagId\": \"headache\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Paranoid\",\r\n      \"DisplayLabel\":
+        \"Paranoid\",\r\n      \"Hits\": 590,\r\n      \"TagId\": \"paranoid\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Anxious\",\r\n      \"DisplayLabel\":
+        \"Anxious\",\r\n      \"Hits\": 234,\r\n      \"TagId\": \"anxious\",\r\n
+        \     \"Category\": \"Exclude\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"ADD/ADHD\",\r\n      \"DisplayLabel\":
+        \"ADD/ADHD\",\r\n      \"Hits\": 674,\r\n      \"TagId\": \"addadhd\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Alzheimer's\",\r\n      \"DisplayLabel\":
+        \"Alzheimer's\",\r\n      \"Hits\": 33,\r\n      \"TagId\": \"alzheimers\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Anorexia\",\r\n      \"DisplayLabel\":
+        \"Anorexia\",\r\n      \"Hits\": 136,\r\n      \"TagId\": \"anorexia\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Anxiety\",\r\n      \"DisplayLabel\":
+        \"Anxiety\",\r\n      \"Hits\": 987,\r\n      \"TagId\": \"anxiety\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Arthritis\",\r\n      \"DisplayLabel\":
+        \"Arthritis\",\r\n      \"Hits\": 354,\r\n      \"TagId\": \"arthritis\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Asthma\",\r\n      \"DisplayLabel\":
+        \"Asthma\",\r\n      \"Hits\": 109,\r\n      \"TagId\": \"asthma\",\r\n      \"Category\":
+        \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Cancer\",\r\n      \"DisplayLabel\":
+        \"Cancer\",\r\n      \"Hits\": 49,\r\n      \"TagId\": \"cancer\",\r\n      \"Category\":
+        \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Crohn's Disease\",\r\n      \"DisplayLabel\":
+        \"Crohn's Disease\",\r\n      \"Hits\": 44,\r\n      \"TagId\": \"crohns-disease\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Epilepsy\",\r\n      \"DisplayLabel\":
+        \"Epilepsy\",\r\n      \"Hits\": 37,\r\n      \"TagId\": \"epilepsy\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Fibromyalgia\",\r\n      \"DisplayLabel\":
+        \"Fibromyalgia\",\r\n      \"Hits\": 121,\r\n      \"TagId\": \"fibromyalgia\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Gastrointestinal Disorder\",\r\n
+        \     \"DisplayLabel\": \"Gastrointestinal Disorder\",\r\n      \"Hits\":
+        161,\r\n      \"TagId\": \"gastrointestinal-disorder\",\r\n      \"Category\":
+        \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Glaucoma\",\r\n      \"DisplayLabel\":
+        \"Glaucoma\",\r\n      \"Hits\": 32,\r\n      \"TagId\": \"glaucoma\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"HIV/AIDS\",\r\n      \"DisplayLabel\":
+        \"HIV/AIDS\",\r\n      \"Hits\": 10,\r\n      \"TagId\": \"hivaids\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Hypertension\",\r\n      \"DisplayLabel\":
+        \"Hypertension\",\r\n      \"Hits\": 79,\r\n      \"TagId\": \"hypertension\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Migraines\",\r\n      \"DisplayLabel\":
+        \"Migraines\",\r\n      \"Hits\": 605,\r\n      \"TagId\": \"migraines\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Multiple Sclerosis\",\r\n      \"DisplayLabel\":
+        \"Multiple Sclerosis\",\r\n      \"Hits\": 26,\r\n      \"TagId\": \"multiple-sclerosis\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Phantom Limb Pain\",\r\n      \"DisplayLabel\":
+        \"Phantom Limb Pain\",\r\n      \"Hits\": 15,\r\n      \"TagId\": \"phantom-limb-pain\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"PMS\",\r\n      \"DisplayLabel\":
+        \"PMS\",\r\n      \"Hits\": 169,\r\n      \"TagId\": \"pms\",\r\n      \"Category\":
+        \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"PTSD\",\r\n      \"DisplayLabel\": \"PTSD\",\r\n
+        \     \"Hits\": 431,\r\n      \"TagId\": \"ptsd\",\r\n      \"Category\":
+        \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Spinal Cord Injury\",\r\n      \"DisplayLabel\":
+        \"Spinal Cord Injury\",\r\n      \"Hits\": 76,\r\n      \"TagId\": \"spinal-cord-injury\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Tourette's Syndrome\",\r\n
+        \     \"DisplayLabel\": \"Tourette's Syndrome\",\r\n      \"Hits\": 12,\r\n
+        \     \"TagId\": \"tourettes-syndrome\",\r\n      \"Category\": \"Conditions\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Cachexia\",\r\n      \"DisplayLabel\": \"Cachexia\",\r\n
+        \     \"Hits\": 16,\r\n      \"TagId\": \"cachexia\",\r\n      \"Category\":
+        \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Parkinson's\",\r\n      \"DisplayLabel\":
+        \"Parkinson's\",\r\n      \"Hits\": 5,\r\n      \"TagId\": \"parkinsons\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Bipolar Disorder\",\r\n      \"DisplayLabel\":
+        \"Bipolar Disorder\",\r\n      \"Hits\": 390,\r\n      \"TagId\": \"bipolar-disorder\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Muscular Dystrophy\",\r\n      \"DisplayLabel\":
+        \"Muscular Dystrophy\",\r\n      \"Hits\": 15,\r\n      \"TagId\": \"muscular-dystrophy\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Tinnitus\",\r\n      \"DisplayLabel\":
+        \"Tinnitus\",\r\n      \"Hits\": 22,\r\n      \"TagId\": \"tinnitus\",\r\n
+        \     \"Category\": \"Conditions\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Cramps\",\r\n      \"DisplayLabel\":
+        \"Cramps\",\r\n      \"Hits\": 81,\r\n      \"TagId\": \"cramps\",\r\n      \"Category\":
+        \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Depression\",\r\n      \"DisplayLabel\":
+        \"Depression\",\r\n      \"Hits\": 895,\r\n      \"TagId\": \"depression\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Eye Pressure\",\r\n      \"DisplayLabel\":
+        \"Eye Pressure\",\r\n      \"Hits\": 68,\r\n      \"TagId\": \"eye-pressure\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Fatigue\",\r\n      \"DisplayLabel\":
+        \"Fatigue\",\r\n      \"Hits\": 311,\r\n      \"TagId\": \"fatigue\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Headaches\",\r\n      \"DisplayLabel\":
+        \"Headaches\",\r\n      \"Hits\": 332,\r\n      \"TagId\": \"headaches\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Inflammation\",\r\n      \"DisplayLabel\":
+        \"Inflammation\",\r\n      \"Hits\": 115,\r\n      \"TagId\": \"inflammation\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Insomnia\",\r\n      \"DisplayLabel\":
+        \"Insomnia\",\r\n      \"Hits\": 641,\r\n      \"TagId\": \"insomnia\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Lack Of Appetite\",\r\n      \"DisplayLabel\":
+        \"Lack Of Appetite\",\r\n      \"Hits\": 376,\r\n      \"TagId\": \"lack-of-appetite\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Muscle Spasms\",\r\n      \"DisplayLabel\":
+        \"Muscle Spasms\",\r\n      \"Hits\": 202,\r\n      \"TagId\": \"muscle-spasms\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Nausea\",\r\n      \"DisplayLabel\":
+        \"Nausea\",\r\n      \"Hits\": 337,\r\n      \"TagId\": \"nausea\",\r\n      \"Category\":
+        \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Pain\",\r\n      \"DisplayLabel\": \"Pain\",\r\n
+        \     \"Hits\": 941,\r\n      \"TagId\": \"pain\",\r\n      \"Category\":
+        \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Seizures\",\r\n      \"DisplayLabel\":
+        \"Seizures\",\r\n      \"Hits\": 16,\r\n      \"TagId\": \"seizures\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Stress\",\r\n      \"DisplayLabel\":
+        \"Stress\",\r\n      \"Hits\": 990,\r\n      \"TagId\": \"stress\",\r\n      \"Category\":
+        \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Spasticity\",\r\n      \"DisplayLabel\":
+        \"Spasticity\",\r\n      \"Hits\": 17,\r\n      \"TagId\": \"spasticity\",\r\n
+        \     \"Category\": \"Symptoms\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Sweet\",\r\n      \"DisplayLabel\":
+        \"Sweet\",\r\n      \"Hits\": 660,\r\n      \"TagId\": \"sweet\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Berry\",\r\n      \"DisplayLabel\":
+        \"Berry\",\r\n      \"Hits\": 268,\r\n      \"TagId\": \"berry\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Blueberry\",\r\n      \"DisplayLabel\":
+        \"Blueberry\",\r\n      \"Hits\": 108,\r\n      \"TagId\": \"blueberry\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Strawberry\",\r\n      \"DisplayLabel\":
+        \"Strawberry\",\r\n      \"Hits\": 23,\r\n      \"TagId\": \"strawberry\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Grape\",\r\n      \"DisplayLabel\":
+        \"Grape\",\r\n      \"Hits\": 76,\r\n      \"TagId\": \"grape\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Citrus\",\r\n      \"DisplayLabel\":
+        \"Citrus\",\r\n      \"Hits\": 336,\r\n      \"TagId\": \"citrus\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Orange\",\r\n      \"DisplayLabel\":
+        \"Orange\",\r\n      \"Hits\": 50,\r\n      \"TagId\": \"orange\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Lime\",\r\n      \"DisplayLabel\": \"Lime\",\r\n
+        \     \"Hits\": 45,\r\n      \"TagId\": \"lime\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Lemon\",\r\n      \"DisplayLabel\": \"Lemon\",\r\n      \"Hits\":
+        138,\r\n      \"TagId\": \"lemon\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Grapefruit\",\r\n      \"DisplayLabel\": \"Grapefruit\",\r\n
+        \     \"Hits\": 50,\r\n      \"TagId\": \"grapefruit\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Tropical\",\r\n      \"DisplayLabel\":
+        \"Tropical\",\r\n      \"Hits\": 117,\r\n      \"TagId\": \"tropical\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Pineapple\",\r\n      \"DisplayLabel\":
+        \"Pineapple\",\r\n      \"Hits\": 33,\r\n      \"TagId\": \"pineapple\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Mango\",\r\n      \"DisplayLabel\":
+        \"Mango\",\r\n      \"Hits\": 36,\r\n      \"TagId\": \"mango\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Tree Fruit\",\r\n      \"DisplayLabel\":
+        \"Tree Fruit\",\r\n      \"Hits\": 38,\r\n      \"TagId\": \"tree-fruit\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Apple\",\r\n      \"DisplayLabel\":
+        \"Apple\",\r\n      \"Hits\": 24,\r\n      \"TagId\": \"apple\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Pear\",\r\n      \"DisplayLabel\": \"Pear\",\r\n
+        \     \"Hits\": 3,\r\n      \"TagId\": \"pear\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Peach\",\r\n      \"DisplayLabel\": \"Peach\",\r\n      \"Hits\":
+        8,\r\n      \"TagId\": \"peach\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Apricot\",\r\n      \"DisplayLabel\": \"Apricot\",\r\n
+        \     \"Hits\": 15,\r\n      \"TagId\": \"apricot\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Plum\",\r\n      \"DisplayLabel\": \"Plum\",\r\n
+        \     \"Hits\": 7,\r\n      \"TagId\": \"plum\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Flowery\",\r\n      \"DisplayLabel\": \"Flowery\",\r\n
+        \     \"Hits\": 187,\r\n      \"TagId\": \"flowery\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Lavender\",\r\n      \"DisplayLabel\":
+        \"Lavender\",\r\n      \"Hits\": 64,\r\n      \"TagId\": \"lavender\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Rose\",\r\n      \"DisplayLabel\":
+        \"Rose\",\r\n      \"Hits\": 20,\r\n      \"TagId\": \"rose\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Violet\",\r\n      \"DisplayLabel\":
+        \"Violet\",\r\n      \"Hits\": 6,\r\n      \"TagId\": \"violet\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Honey\",\r\n      \"DisplayLabel\":
+        \"Honey\",\r\n      \"Hits\": 44,\r\n      \"TagId\": \"honey\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Earthy\",\r\n      \"DisplayLabel\":
+        \"Earthy\",\r\n      \"Hits\": 640,\r\n      \"TagId\": \"earthy\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Pungent\",\r\n      \"DisplayLabel\":
+        \"Pungent\",\r\n      \"Hits\": 466,\r\n      \"TagId\": \"pungent\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Skunk\",\r\n      \"DisplayLabel\":
+        \"Skunk\",\r\n      \"Hits\": 194,\r\n      \"TagId\": \"skunk\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Blue Cheese\",\r\n      \"DisplayLabel\":
+        \"Blue Cheese\",\r\n      \"Hits\": 16,\r\n      \"TagId\": \"blue-cheese\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Cheese\",\r\n      \"DisplayLabel\":
+        \"Cheese\",\r\n      \"Hits\": 52,\r\n      \"TagId\": \"cheese\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Butter\",\r\n      \"DisplayLabel\":
+        \"Butter\",\r\n      \"Hits\": 31,\r\n      \"TagId\": \"butter\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Woody\",\r\n      \"DisplayLabel\":
+        \"Woody\",\r\n      \"Hits\": 211,\r\n      \"TagId\": \"woody\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Pine\",\r\n      \"DisplayLabel\": \"Pine\",\r\n
+        \     \"Hits\": 286,\r\n      \"TagId\": \"pine\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Tea\",\r\n      \"DisplayLabel\": \"Tea\",\r\n
+        \     \"Hits\": 33,\r\n      \"TagId\": \"tea\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Tobacco\",\r\n      \"DisplayLabel\": \"Tobacco\",\r\n
+        \     \"Hits\": 11,\r\n      \"TagId\": \"tobacco\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Nutty\",\r\n      \"DisplayLabel\":
+        \"Nutty\",\r\n      \"Hits\": 33,\r\n      \"TagId\": \"nutty\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Vanilla\",\r\n      \"DisplayLabel\":
+        \"Vanilla\",\r\n      \"Hits\": 20,\r\n      \"TagId\": \"vanilla\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Chestnut\",\r\n      \"DisplayLabel\":
+        \"Chestnut\",\r\n      \"Hits\": 20,\r\n      \"TagId\": \"chestnut\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Coffee\",\r\n      \"DisplayLabel\":
+        \"Coffee\",\r\n      \"Hits\": 24,\r\n      \"TagId\": \"coffee\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Chemical\",\r\n      \"DisplayLabel\":
+        \"Chemical\",\r\n      \"Hits\": 73,\r\n      \"TagId\": \"chemical\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Tar\",\r\n      \"DisplayLabel\":
+        \"Tar\",\r\n      \"Hits\": 5,\r\n      \"TagId\": \"tar\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Ammonia\",\r\n      \"DisplayLabel\":
+        \"Ammonia\",\r\n      \"Hits\": 29,\r\n      \"TagId\": \"ammonia\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Diesel\",\r\n      \"DisplayLabel\":
+        \"Diesel\",\r\n      \"Hits\": 130,\r\n      \"TagId\": \"diesel\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Menthol\",\r\n      \"DisplayLabel\":
+        \"Menthol\",\r\n      \"Hits\": 15,\r\n      \"TagId\": \"menthol\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Spicy/Herbal\",\r\n      \"DisplayLabel\":
+        \"Spicy/Herbal\",\r\n      \"Hits\": 110,\r\n      \"TagId\": \"spicyherbal\",\r\n
+        \     \"Category\": \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Sage\",\r\n      \"DisplayLabel\":
+        \"Sage\",\r\n      \"Hits\": 40,\r\n      \"TagId\": \"sage\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Minty\",\r\n      \"DisplayLabel\":
+        \"Minty\",\r\n      \"Hits\": 13,\r\n      \"TagId\": \"minty\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Pepper\",\r\n      \"DisplayLabel\":
+        \"Pepper\",\r\n      \"Hits\": 38,\r\n      \"TagId\": \"pepper\",\r\n      \"Category\":
+        \"Flavors\",\r\n      \"Selected\": false,\r\n      \"NoFollow\": false\r\n
+        \   },\r\n    {\r\n      \"Label\": \"Mint\",\r\n      \"DisplayLabel\": \"Mint\",\r\n
+        \     \"Hits\": 25,\r\n      \"TagId\": \"mint\",\r\n      \"Category\": \"Flavors\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n
+        \     \"Label\": \"Hybrid\",\r\n      \"DisplayLabel\": \"Hybrid\",\r\n      \"Hits\":
+        0,\r\n      \"Url\": \"/explore/category-hybrid\",\r\n      \"TagId\": \"hybrid\",\r\n
+        \     \"Category\": \"Category\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Indica\",\r\n      \"DisplayLabel\":
+        \"Indica\",\r\n      \"Hits\": 0,\r\n      \"Url\": \"/explore/category-indica\",\r\n
+        \     \"TagId\": \"indica\",\r\n      \"Category\": \"Category\",\r\n      \"Selected\":
+        false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"Sativa\",\r\n      \"DisplayLabel\": \"Sativa\",\r\n      \"Hits\": 0,\r\n
+        \     \"Url\": \"/explore/category-sativa\",\r\n      \"TagId\": \"sativa\",\r\n
+        \     \"Category\": \"Category\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"Edible\",\r\n      \"DisplayLabel\":
+        \"Edible\",\r\n      \"Hits\": 0,\r\n      \"Url\": \"/explore/category-edible\",\r\n
+        \     \"TagId\": \"edible\",\r\n      \"Category\": \"Category\",\r\n      \"Selected\":
+        false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"My Favorites\",\r\n      \"DisplayLabel\": \"My Favorites\",\r\n      \"Hits\":
+        0,\r\n      \"Url\": \"/explore/personal-favorites\",\r\n      \"TagId\":
+        \"favorites\",\r\n      \"Category\": \"Personal\",\r\n      \"Selected\":
+        false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"Strains I've Reviewed\",\r\n      \"DisplayLabel\": \"Strains I've Reviewed\",\r\n
+        \     \"Hits\": 0,\r\n      \"Url\": \"/explore/personal-reviewed\",\r\n      \"TagId\":
+        \"reviewed\",\r\n      \"Category\": \"Personal\",\r\n      \"Selected\":
+        false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"Strains I Haven't Reviewed\",\r\n      \"DisplayLabel\": \"Strains I Haven't
+        Reviewed\",\r\n      \"Hits\": 0,\r\n      \"Url\": \"/explore/personal-notreviewed\",\r\n
+        \     \"TagId\": \"notreviewed\",\r\n      \"Category\": \"Personal\",\r\n
+        \     \"Selected\": false,\r\n      \"NoFollow\": false\r\n    }\r\n  ],\r\n
+        \ \"PagingContext\": {\r\n    \"PageCount\": 125,\r\n    \"TotalItemCount\":
+        1245,\r\n    \"PageIndex\": 0,\r\n    \"PageNumber\": 1,\r\n    \"PageSize\":
+        10,\r\n    \"HasPreviousPage\": false,\r\n    \"HasNextPage\": true,\r\n    \"IsFirstPage\":
+        true,\r\n    \"IsLastPage\": false\r\n  },\r\n  \"LocationUrl\": \"/explore/location-{text}(1111,2222)\",\r\n
+        \ \"Sorts\": [\r\n    {\r\n      \"Label\": \"Popular\",\r\n      \"DisplayLabel\":
+        \"Popular\",\r\n      \"Hits\": 0,\r\n      \"Url\": \"/explore/sort-popular\",\r\n
+        \     \"TagId\": \"popular\",\r\n      \"Category\": \"Sort\",\r\n      \"Selected\":
+        true,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"Average Rating\",\r\n      \"DisplayLabel\": \"Average Rating\",\r\n      \"Hits\":
+        0,\r\n      \"Url\": \"/explore/sort-rating\",\r\n      \"TagId\": \"rating\",\r\n
+        \     \"Category\": \"Sort\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    },\r\n    {\r\n      \"Label\": \"A-Z\",\r\n      \"DisplayLabel\":
+        \"A-Z\",\r\n      \"Hits\": 0,\r\n      \"Url\": \"/explore/sort-alpha\",\r\n
+        \     \"TagId\": \"alpha\",\r\n      \"Category\": \"Sort\",\r\n      \"Selected\":
+        false,\r\n      \"NoFollow\": false\r\n    },\r\n    {\r\n      \"Label\":
+        \"Newest\",\r\n      \"DisplayLabel\": \"Newest\",\r\n      \"Hits\": 0,\r\n
+        \     \"Url\": \"/explore/sort-newest\",\r\n      \"TagId\": \"newest\",\r\n
+        \     \"Category\": \"Sort\",\r\n      \"Selected\": false,\r\n      \"NoFollow\":
+        false\r\n    }\r\n  ],\r\n  \"LocationFilter\": false\r\n}"
+    http_version: 
+  recorded_at: Sun, 22 Mar 2015 17:37:59 GMT
+recorded_with: VCR 2.9.3
