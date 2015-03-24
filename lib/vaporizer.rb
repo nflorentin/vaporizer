@@ -1,6 +1,7 @@
 require 'vaporizer/strain'
-require 'vaporizer/requester'
+require 'vaporizer/http_client'
 require 'vaporizer/version'
+require 'vaporizer/error'
 
 module Vaporizer
 

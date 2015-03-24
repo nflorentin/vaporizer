@@ -1,7 +1,7 @@
 require 'httparty'
 
 module Vaporizer
-  module Requester
+  module HttpClient
     include HTTParty
 
     base_uri 'http://data.leafly.com'
@@ -12,7 +12,7 @@ module Vaporizer
       sub_paths = splited_path - url_params_defined
 
       define_singleton_method name do |url_params = {}, query_params = {}|
-        headers = { 'app_id' => Vaporizer.config.app_id, 
+        headers = { 'app_id' => Vaporizer.config.app_id,
                     'app_key' => Vaporizer.config.app_key,
                     'Accept' => 'application/json'
                   }.merge(extra_headers)
@@ -28,9 +28,14 @@ module Vaporizer
             url_params_values << url_params[clean_param.to_sym]
           end
         end
-        
+
         generated_path = sub_paths.zip(url_params_values).flatten.compact.join
-        Vaporizer::Requester.send(method, generated_path, opts)
+        response = Vaporizer::HttpClient.send(method, generated_path, opts)
+        if response.code == 404
+          raise Vaporizer::NotFound, 'The requested resource was not found'
+        else
+          return response.parsed_response
+        end
       end
     end
 

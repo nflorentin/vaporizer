@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'yaml'
 
-secrets = YAML.load_file('./secrets.yml') 
+secrets = YAML.load_file('./secrets.yml')
 
 describe Vaporizer::Strain do
 
@@ -16,6 +16,21 @@ describe Vaporizer::Strain do
     Vaporizer.configure do |config|
       config.app_id = secrets['app_id']
       config.app_key = secrets['app_key']
+    end
+
+    @non_existing_strain_slug = "14800da40dbdb5115d3e02168972b845"
+    VCR.use_cassette('non-existing-strain-details') do
+      begin
+        Vaporizer::Strain.details(@non_existing_strain_slug)
+      rescue Vaporizer::NotFound
+      end
+    end
+
+    VCR.use_cassette('non-existing-strain-reviews') do
+      begin
+        Vaporizer::Strain.reviews(@non_existing_strain_slug, page: 0, take: 1)
+      rescue Vaporizer::NotFound
+      end
     end
   end
 
@@ -48,12 +63,12 @@ describe Vaporizer::Strain do
     end
 
     context "missing params" do
-      it "should raise exception ArgumentError" do
-        expect { Vaporizer::Strain.search({ search: '', page: 0 }) }.to raise_error(ArgumentError)
+      it "should raise error Vaporizer::MissingParameter" do
+        expect { Vaporizer::Strain.search({ search: '', page: 0 }) }.to raise_error(Vaporizer::MissingParameter)
       end
 
-      it "should raise exception ArgumentError" do
-        expect { Vaporizer::Strain.search({ search: '', take: 0 }) }.to raise_error(ArgumentError)
+      it "should raise error Vaporizer::MissingParameter" do
+        expect { Vaporizer::Strain.search({ search: '', take: 0 }) }.to raise_error(Vaporizer::MissingParameter)
       end
     end
   end
@@ -75,6 +90,14 @@ describe Vaporizer::Strain do
       VCR.use_cassette('details') do
         expect(@strain['slug']).to eq('la-confidential')
       end
+    end
+
+    it "should raise an error if strain doesn't exist" do
+      expect do
+        VCR.use_cassette('non-existing-strain-details') do
+          Vaporizer::Strain.details(@non_existing_strain_slug)
+        end
+      end.to raise_error(Vaporizer::NotFound)
     end
   end
 
@@ -117,15 +140,23 @@ describe Vaporizer::Strain do
           expect(@strains['pagingContext']['PageSize']).to eq(@take)
         end
       end
+
+      it "should raise an error if strain doesn't exist" do
+        expect do
+          VCR.use_cassette('non-existing-strain-reviews') do
+            Vaporizer::Strain.reviews(@non_existing_strain_slug, { page: 0, take: 1 })
+          end
+        end.to raise_error(Vaporizer::NotFound)
+      end
     end
 
     context "missing params" do
-      it "should raise exception ArgumentError" do
-        expect { Vaporizer::Strain.reviews('la-confidential', { take: 2 }) }.to raise_error(ArgumentError)
+      it "should raise error Vaporizer::MissingParameter" do
+        expect { Vaporizer::Strain.reviews('la-confidential', { take: 2 }) }.to raise_error(Vaporizer::MissingParameter)
       end
 
-      it "should raise exception ArgumentError" do
-        expect { Vaporizer::Strain.reviews('la-confidential', { page: 1 }) }.to raise_error(ArgumentError)
+      it "should raise error Vaporizer::MissingParameter" do
+        expect { Vaporizer::Strain.reviews('la-confidential', { page: 1 }) }.to raise_error(Vaporizer::MissingParameter)
       end
     end
   end
