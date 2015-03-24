@@ -26,7 +26,7 @@ module Vaporizer
     def self.reviews(slug, params = {})
       validate_presence_of([:page, :take], params)
       params = { query: params }
-      strains_reviews_index({ slug: slug}, params)
+      strains_reviews_index({ slug: slug }, params)
     end
 
     def self.review_details(slug, review_id)
@@ -36,13 +36,13 @@ module Vaporizer
     def self.photos(slug, params = {})
       params = { page: 0, take: 10 }.merge(params)
       params = { query: params }
-      strains_photos_index({ slug: slug}, params)
+      strains_photos_index({ slug: slug }, params)
     end
 
     def self.availabilities(slug, params = {})
       validate_presence_of([:lat, :lon], params)
       params = { query: params }
-      strains_availabilities_index({ slug: slug}, params)
+      strains_availabilities_index({ slug: slug }, params)
     end
 
     private

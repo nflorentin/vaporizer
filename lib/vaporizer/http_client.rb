@@ -23,7 +23,7 @@ module Vaporizer
         url_params_defined.each do |param|
           clean_param = param[1..-1]
           if !url_params.keys.map(&:to_s).include?(clean_param)
-            raise ArgumentError, "path param #{clean_param} is missing"
+            raise Vaporizer::MissingPathParameter, "path param #{clean_param} is missing"
           else
             url_params_values << url_params[clean_param.to_sym]
           end
