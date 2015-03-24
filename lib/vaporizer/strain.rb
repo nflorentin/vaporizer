@@ -34,7 +34,7 @@ module Vaporizer
     end
 
     def self.photos(slug, params = {})
-      params = { page: 0, take: 10 }.merge(params)
+      validate_presence_of([:page, :take], params)
       params = { query: params }
       strains_photos_index({ slug: slug }, params)
     end
