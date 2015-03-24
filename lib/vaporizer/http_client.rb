@@ -6,31 +6,25 @@ module Vaporizer
 
     base_uri 'http://data.leafly.com'
 
-    def define_httparty_request_wrapper(name, method, path, extra_headers = {})
-      splited_path = split_path(path)
-      url_params_defined = path_params(splited_path)
-      sub_paths = splited_path - url_params_defined
+    def define_httparty_request_wrapper(name, method, route, extra_headers = {})
+      splited_route = split_route(route)
+      route_params_defined = extract_params_from_route(splited_route)
+      sub_paths = splited_route - route_params_defined
 
-      define_singleton_method name do |url_params = {}, query_params = {}|
+      route_params_defined = strip_symbolize_route_params(route_params_defined)
+
+      define_singleton_method name do |params_given = {}, query_params = {}|
         headers = { 'app_id' => Vaporizer.config.app_id,
                     'app_key' => Vaporizer.config.app_key,
                     'Accept' => 'application/json'
                   }.merge(extra_headers)
 
         opts = { headers: headers }.merge(query_params)
-        url_params_values = []
 
-        url_params_defined.each do |param|
-          clean_param = param[1..-1]
-          if !url_params.keys.map(&:to_s).include?(clean_param)
-            raise Vaporizer::MissingPathParameter, "path param #{clean_param} is missing"
-          else
-            url_params_values << url_params[clean_param.to_sym]
-          end
-        end
+        params_values = get_route_params_values(route_params_defined, params_given)
+        built_path = build_path(sub_paths, params_values)
 
-        generated_path = sub_paths.zip(url_params_values).flatten.compact.join
-        response = Vaporizer::HttpClient.send(method, generated_path, opts)
+        response = Vaporizer::HttpClient.send(method, built_path, opts)
         if response.code == 404
           raise Vaporizer::NotFound, 'The requested resource was not found'
         else
@@ -39,12 +33,32 @@ module Vaporizer
       end
     end
 
-    private
-    def split_path(path)
-      path.split(/(:[a-z_]+)/)
+    def get_route_params_values(url_params, params_given)
+      params_values = []
+      url_params.each do |param|
+        if !params_given.keys.include?(param)
+          raise Vaporizer::MissingPathParameter, "Path parameter #{param} is missing"
+        else
+          params_values << params_given[param]
+        end
+      end
+      params_values
     end
 
-    def path_params(splited_path)
+    private
+    def build_path(sub_paths, params_values)
+      sub_paths.zip(params_values).flatten.compact.join
+    end
+
+    def strip_symbolize_route_params(params_array)
+      params_array.map { |param| param[1..-1].to_sym }
+    end
+
+    def split_route(route)
+      route.split(/(:[a-z_]+)/)
+    end
+
+    def extract_params_from_route(splited_path)
       splited_path.select { |e| e[0] == ':' }
     end
   end
