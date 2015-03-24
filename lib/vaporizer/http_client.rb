@@ -4,6 +4,7 @@ module Vaporizer
   module HttpClient
     include HTTParty
 
+    default_timeout 1
     base_uri 'http://data.leafly.com'
 
     def define_httparty_request_wrapper(name, method, route, extra_headers = {})
