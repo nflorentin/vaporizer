@@ -1,5 +1,7 @@
 require 'vaporizer/strain'
+require 'vaporizer/location'
 require 'vaporizer/http_client'
+require 'vaporizer/validatable'
 require 'vaporizer/version'
 require 'vaporizer/error'
 

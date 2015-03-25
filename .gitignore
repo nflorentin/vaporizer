@@ -24,3 +24,5 @@ mkmf.log
 .DS_Store
 secrets.yml
 spec/fixtures/*.yml
+spec/fixtures/strains/*.yml
+spec/fixtures/locations/*.yml

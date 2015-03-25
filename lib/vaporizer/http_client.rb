@@ -4,7 +4,7 @@ module Vaporizer
   module HttpClient
     include HTTParty
 
-    default_timeout 1
+    default_timeout 2
     base_uri 'http://data.leafly.com'
 
     def define_httparty_request_wrapper(name, method, route, extra_headers = {})
@@ -17,7 +17,8 @@ module Vaporizer
       define_singleton_method name do |params_given = {}, query_params = {}|
         headers = { 'app_id' => Vaporizer.config.app_id,
                     'app_key' => Vaporizer.config.app_key,
-                    'Accept' => 'application/json'
+                    'Accept' => 'application/json',
+                    'Accept-Encoding' => 'gzip, deflate'
                   }.merge(extra_headers)
 
         opts = { headers: headers }.merge(query_params)
@@ -26,11 +27,7 @@ module Vaporizer
         built_path = build_path(sub_paths, params_values)
 
         response = Vaporizer::HttpClient.send(method, built_path, opts)
-        if response.code == 404
-          raise Vaporizer::NotFound, 'The requested resource was not found'
-        else
-          return response.parsed_response
-        end
+        handle_response(response)
       end
     end
 
@@ -47,6 +44,20 @@ module Vaporizer
     end
 
     private
+    def handle_response(response)
+      if response.not_found?
+        raise Vaporizer::NotFound, "#{response.code}"
+      elsif response.client_error?
+        raise Vaporizer::ClientError, "#{response.code}"
+      elsif response.server_error?
+        raise Vaporizer::ServerError, "#{response.code}"
+      elsif response.success?
+        response.parsed_response
+      else
+        raise Vaporizer::Error, "#{response.code}"
+      end
+    end
+
     def build_path(sub_paths, params_values)
       sub_paths.zip(params_values).flatten.compact.join
     end

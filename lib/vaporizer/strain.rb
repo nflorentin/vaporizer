@@ -1,12 +1,12 @@
-require 'json'
 require 'vaporizer/http_client'
-require 'vaporizer/error'
+require 'vaporizer/validatable'
 
 module Vaporizer
   module Strain
     extend Vaporizer::HttpClient
+    extend Vaporizer::Validatable
 
-    define_httparty_request_wrapper :strains_search, :post, '/strains', 'Accept-Encoding' => 'gzip, deflate'
+    define_httparty_request_wrapper :strains_search, :post, '/strains'
     define_httparty_request_wrapper :strains_show, :get, '/strains/:slug'
     define_httparty_request_wrapper :strains_reviews_index, :get, '/strains/:slug/reviews'
     define_httparty_request_wrapper :strains_reviews_show, :get, '/strains/:slug/reviews/:review_id'
@@ -43,15 +43,6 @@ module Vaporizer
       validate_presence_of([:lat, :lon], params)
       params = { query: params }
       strains_availabilities_index({ slug: slug }, params)
-    end
-
-    private
-    def self.validate_presence_of(keys, hash)
-      keys.each do |key|
-        unless hash.keys.include?(key)
-          raise Vaporizer::MissingParameter, "Missing param '#{key}'"
-        end
-      end
     end
   end
 end
