@@ -3,7 +3,8 @@ require 'spec_helper'
 describe Vaporizer::HttpClient do
   before :all do
     @api = Module.new
-    @api.extend(Vaporizer::HttpClient)
+    @api.class.extend(Vaporizer::HttpClient)
+    @api = @api.class
   end
 
   describe 'get_route_params_values(url_params, params_given)' do
@@ -28,7 +29,7 @@ describe Vaporizer::HttpClient do
 
   describe "call define_httparty_request_wrapper at class level" do
     before :all do
-      @api.instance_eval do
+      @api.class_eval do
         define_httparty_request_wrapper :test_method, :get, '/testUrl/:test'
       end
     end

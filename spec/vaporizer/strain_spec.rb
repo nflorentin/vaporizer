@@ -18,7 +18,9 @@ describe Vaporizer::Strain do
       config.app_key = secrets['app_key']
     end
 
+    @strain_slug = 'la-confidential'
     @non_existing_strain_slug = "5d0e71bda1005d0770a4e31e1a27580d"
+
     VCR.use_cassette('strains/non-existing-details') do
       begin
         Vaporizer::Strain.details(@non_existing_strain_slug)
@@ -71,12 +73,57 @@ describe Vaporizer::Strain do
         expect { Vaporizer::Strain.search(search: '', take: 0) }.to raise_error(Vaporizer::MissingParameter)
       end
     end
+
+    context "a bit more complex search" do
+      before :all do
+        @flavor = 'blueberry'
+        @condition = 'anxiety'
+        VCR.use_cassette('strains/search-complex') do
+          @strains = Vaporizer::Strain.search(
+            filters: {
+              flavors: [@flavor],
+              conditions: [@condition]
+            },
+            search: '',
+            page: 0, take: 1
+          )
+        end
+      end
+
+      it 'should return a hash' do
+        VCR.use_cassette('strains/search-complex') do
+          expect(@strains.class).to be(Hash)
+        end
+      end
+
+      it "should return a hash with a key named 'Strains'" do
+        VCR.use_cassette('strains/search-complex') do
+          expect(@strains).to have_key('Strains')
+        end
+      end
+
+      it "should return strains with specified flavor" do
+        VCR.use_cassette('strains/search-complex') do
+          expect(
+            @strains["Strains"][0]['Flavors'].map { |flavor| flavor['Name'].downcase }
+          ).to include(@flavor)
+        end
+      end
+
+      it "should return strains with specified condition" do
+        VCR.use_cassette('strains/search-complex') do
+          expect(
+            @strains["Strains"][0]['Conditions'].map { |condition| condition['Name'].downcase }
+          ).to include(@condition)
+        end
+      end
+    end
   end
 
   describe '.details(slug)' do
     before :all do
       VCR.use_cassette('strains/details') do
-        @strain = Vaporizer::Strain.details('la-confidential')
+        @strain = Vaporizer::Strain.details(@strain_slug)
       end
     end
 
@@ -88,7 +135,7 @@ describe Vaporizer::Strain do
 
     it "should return the specified strain" do
       VCR.use_cassette('strains/details') do
-        expect(@strain['slug']).to eq('la-confidential')
+        expect(@strain['slug']).to eq(@strain_slug)
       end
     end
 
@@ -107,7 +154,7 @@ describe Vaporizer::Strain do
         @take = 7
         @page = 0
         VCR.use_cassette('strains/reviews') do
-          @reviews = Vaporizer::Strain.reviews('la-confidential', { page: @page, take: @take })
+          @reviews = Vaporizer::Strain.reviews(@strain_slug, { page: @page, take: @take })
         end
       end
 
@@ -152,11 +199,11 @@ describe Vaporizer::Strain do
 
     context "missing params" do
       it "should raise error Vaporizer::MissingParameter" do
-        expect { Vaporizer::Strain.reviews('la-confidential', { take: 2 }) }.to raise_error(Vaporizer::MissingParameter)
+        expect { Vaporizer::Strain.reviews(@strain_slug, { take: 2 }) }.to raise_error(Vaporizer::MissingParameter)
       end
 
       it "should raise error Vaporizer::MissingParameter" do
-        expect { Vaporizer::Strain.reviews('la-confidential', { page: 1 }) }.to raise_error(Vaporizer::MissingParameter)
+        expect { Vaporizer::Strain.reviews(@strain_slug, { page: 1 }) }.to raise_error(Vaporizer::MissingParameter)
       end
     end
   end
@@ -165,7 +212,7 @@ describe Vaporizer::Strain do
     context "valid params" do
       before :all do
         @id = 2836
-        @strain_slug = 'la-confidential'
+        @strain_slug = @strain_slug
         VCR.use_cassette('strains/review_details') do
           @review = Vaporizer::Strain.review_details(@strain_slug, @id)
         end
@@ -197,7 +244,7 @@ describe Vaporizer::Strain do
         @take = 7
         @page = 0
         VCR.use_cassette('strains/photos') do
-          @photos = Vaporizer::Strain.photos('la-confidential', { page: @page, take: @take })
+          @photos = Vaporizer::Strain.photos(@strain_slug, { page: @page, take: @take })
         end
       end
 
@@ -233,11 +280,11 @@ describe Vaporizer::Strain do
 
       context "missing params" do
         it "should raise error Vaporizer::MissingParameter" do
-          expect { Vaporizer::Strain.photos('la-confidential', { take: 2 }) }.to raise_error(Vaporizer::MissingParameter)
+          expect { Vaporizer::Strain.photos(@strain_slug, { take: 2 }) }.to raise_error(Vaporizer::MissingParameter)
         end
 
         it "should raise error Vaporizer::MissingParameter" do
-          expect { Vaporizer::Strain.photos('la-confidential', { page: 1 }) }.to raise_error(Vaporizer::MissingParameter)
+          expect { Vaporizer::Strain.photos(@strain_slug, { page: 1 }) }.to raise_error(Vaporizer::MissingParameter)
         end
       end
 
@@ -257,7 +304,7 @@ describe Vaporizer::Strain do
         @take = 7
         @page = 0
         VCR.use_cassette('strains/availabilities') do
-          @availabilities = Vaporizer::Strain.availabilities('la-confidential', { lat: 50, lon: 50 })
+          @availabilities = Vaporizer::Strain.availabilities(@strain_slug, { lat: 50, lon: 50 })
         end
       end
 
@@ -269,11 +316,11 @@ describe Vaporizer::Strain do
 
       context "missing params" do
         it "should raise error Vaporizer::MissingParameter" do
-          expect { Vaporizer::Strain.availabilities('la-confidential', { lat: 0 }) }.to raise_error(Vaporizer::MissingParameter)
+          expect { Vaporizer::Strain.availabilities(@strain_slug, { lat: 0 }) }.to raise_error(Vaporizer::MissingParameter)
         end
 
         it "should raise error Vaporizer::MissingParameter" do
-          expect { Vaporizer::Strain.availabilities('la-confidential', { lon: 0 }) }.to raise_error(Vaporizer::MissingParameter)
+          expect { Vaporizer::Strain.availabilities(@strain_slug, { lon: 0 }) }.to raise_error(Vaporizer::MissingParameter)
         end
       end
 
