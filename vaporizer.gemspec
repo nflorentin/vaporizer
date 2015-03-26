@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nicolas Florentin"]
   spec.email         = ["nf.florentin@gmail.com"]
   spec.summary       = 'A lightweight ruby wrapper to consume Leafly API'
-  spec.description   = 'Vaporizer is a lightweight ruby wrapper which enable to consume easily the new Leafly API which needs authentication'
+  spec.description   = 'Vaporizer is a lightweight but complete ruby wrapper to consume easily the new Leafly API'
   spec.homepage      = ""
   spec.license       = "MIT"
 
