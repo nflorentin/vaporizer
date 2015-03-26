@@ -4,8 +4,9 @@ module Vaporizer
   module HttpClient
     include HTTParty
 
-    default_timeout 2
+    default_timeout 1
     base_uri 'http://data.leafly.com'
+    headers 'Accept' => 'application/json', 'Accept-Encoding' => 'gzip, deflate'
 
     def define_httparty_request_wrapper(name, method, route, extra_headers = {})
       splited_route = split_route(route)
@@ -16,9 +17,7 @@ module Vaporizer
 
       define_singleton_method name do |params_given = {}, query_params = {}|
         headers = { 'app_id' => Vaporizer.config.app_id,
-                    'app_key' => Vaporizer.config.app_key,
-                    'Accept' => 'application/json',
-                    'Accept-Encoding' => 'gzip, deflate'
+                    'app_key' => Vaporizer.config.app_key
                   }.merge(extra_headers)
 
         opts = { headers: headers }.merge(query_params)

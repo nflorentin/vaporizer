@@ -19,6 +19,12 @@ module Vaporizer
   class Config
     attr_accessor :app_id, :app_key
 
+    def timeout=(sec)
+      Vaporizer::HttpClient.module_eval do
+        default_timeout sec
+      end
+    end
+
     def initialize
       @app_id = ""
       @app_key = ""
