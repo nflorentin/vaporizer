@@ -40,6 +40,8 @@ end
 ```
 ## Usage examples
 
+These examples are a bit minimalist but you can of course pass more arguments to the methods
+
 ### Strains
 
 **search**
@@ -82,6 +84,33 @@ Vaporizer::Strain.photos('la-confidential', { page: 0, take: 4 })
 **availabilities**
 ```ruby
 Vaporizer::Strain.availabilities('la-confidential', { lat: 33.5, lon: -117.6 })
+```
+
+### Locations
+
+**search**
+```ruby
+Vaporizer::Location.search(latitude: 47.606, longitude: -122.333, page: 0, take: 5)
+```
+
+**details**
+```ruby
+Vaporizer::Location.details('papa-ganja')
+```
+
+**menu**
+```ruby
+Vaporizer::Location.menu('papa-ganja')
+```
+
+**reviews**
+```ruby
+Vaporizer::Location.reviews('papa-ganja', { take: 3, skip: 0})
+```
+
+**specials**
+```ruby
+Vaporizer::Location.specials('papa-ganja')
 ```
 
 ## More options
