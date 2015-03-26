@@ -1,8 +1,6 @@
 # Vaporizer
 
-Gem under construction
-
-Will cover all endpoints of new Leafly API
+Vaporizer is a lightweight ruby wrapper of Leafly API.
 
 ## Installation
 
